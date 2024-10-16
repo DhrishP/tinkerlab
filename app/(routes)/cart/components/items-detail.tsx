@@ -48,7 +48,7 @@ const ItemDetail = () => {
          <Currency value={totalPrice} />
         </div>
       </div>
-      <button onClick={onCheckout} disabled={items.length === 0} className="btn w-full btn-primary mt-6">
+      <button onClick={onCheckout} disabled={items.length === 0} className="btn w-full btn-primary bg-green-500 hover:bg-green-600 mt-6">
         Checkout
       </button>
     </div>

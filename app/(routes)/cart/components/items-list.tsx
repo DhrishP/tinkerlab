@@ -2,7 +2,7 @@ import Image from "next/image";
 import { X } from "lucide-react";
 
 import Icon from "@/components/ui/icon";
-import Currency from "@/lib/currencyconv";
+// import Currency from "@/lib/currencyconv";
 import useCart from "@/hooks/use-cart";
 
 
@@ -41,11 +41,11 @@ const ItemsList: React.FC<CartItemProps> = ({
             </p>
           </div>
 
-          <div className="mt-1 flex text-sm">
+          {/* <div className="mt-1 flex text-sm">
             <p className="text-gray-500">{data.color.name}</p>
             <p className="ml-4 border-l border-gray-200 pl-4 text-gray-500">{data.size.name}</p>
-          </div>
-          <Currency value={data.price} />
+          </div> */}
+          {/* <Currency value={data.price} /> */}
         </div>
       </div>
     </li>

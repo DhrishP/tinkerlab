@@ -32,13 +32,13 @@ const CategoryMain = async ({ params, searchParams }: CategoryMainProps) => {
         <Billboard data={category.billboard} />
         <div className="px-4 sm:px-6 md:px-8">
           <div className="md:grid grid-cols-5 gap-6 ">
-            <div className="lg:hidden">
+            {/* <div className="lg:hidden">
               <MobileFilters sizes={sizes} colors={colors} />
-            </div>
-            <div className="hidden lg:block">
+            </div> */}
+            {/* <div className="hidden lg:block">
               <Filters data={sizes} name="Sizes" searchKey="sizesId" />
               <Filters data={colors} name="Colors" searchKey="colorId" />
-            </div>
+            </div> */}
             <div className="col-span-4">
               <ProductList title="Products" items={products} />
             </div>

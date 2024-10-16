@@ -18,10 +18,10 @@ const ProductCard = ({ data }: ProductCardProps) => {
     router.push(`/product/${data.id}`);
   };
 
-  const HandleExpand = (event: React.FormEvent) => {
-    event.stopPropagation();
-    previewState.onOpen(data);
-  };
+  // const HandleExpand = (event: React.FormEvent) => {
+  //   event.stopPropagation();
+  //   previewState.onOpen(data);
+  // };
 
   const HandleCart = (event: React.FormEvent) => {
     event.stopPropagation();
@@ -41,10 +41,10 @@ const ProductCard = ({ data }: ProductCardProps) => {
         />
         <div className="opacity-0 group-hover:opacity-100 transition absolute w-full px-6 bottom-5">
           <div className="flex gap-x-6 justify-center">
-            <IconButton
+            {/* <IconButton
               onClick={HandleExpand}
               icon={<Expand size={20} className="text-accent" />}
-            />
+            /> */}
             <IconButton
               onClick={HandleCart}
               icon={<ShoppingCart size={20} className="text-accent" />}
@@ -58,9 +58,9 @@ const ProductCard = ({ data }: ProductCardProps) => {
           {data.categories?.name}
         </p>
       </div>
-      <div className="flex items-center justify-between">
+      {/* <div className="flex items-center justify-between">
         <Currency value={data?.price} />
-      </div>
+      </div> */}
     </div>
   );
 };
