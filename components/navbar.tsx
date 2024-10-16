@@ -11,7 +11,7 @@ const Navbar = async () => {
   const data = await getCategories();
 
   return (
-    <div className="navbar bg-base-100 border-b-gray-500 border h-16">
+    <div className="navbar bg-green-100 border-b-gray-500 border h-16">
       <div className="navbar-start">
         <div className="dropdown ">
           <label tabIndex={0} className="btn text-accent btn-ghost lg:hidden">
@@ -40,19 +40,19 @@ const Navbar = async () => {
             />
           </ul>
         </div>
-        <Link href="/" className="font-black ml-2 text-2xl flex items-center h-16 overflow-hidden">
+        <Link href="/" className="font-black ml-2 text-2xl  flex items-center h-16 overflow-hidden">
           TinkerLab🧪
-          <span className="text-primary text-sm flex items-center ml-2">
+          {/* <span className=" text-sm text-green-500 flex items-center ml-2">
             <span className="text-sm">by</span>
             <a
               href="https://dhrishp1.whyfied.me"
-              className="hover:underline text-primary ml-0.5 whitespace-nowrap"
+              className="hover:underline text-green-500 ml-0.5 whitespace-nowrap"
               target="_blank"
               rel="noopener noreferrer"
             >
               whycurious
             </a>
-          </span>
+          </span> */}
         </Link>
         <div className=" hidden lg:flex ml-4 font-semibold  h-16 items-center">
           <Mainnav className="items-center space-x-4  px-1" data={data} />
