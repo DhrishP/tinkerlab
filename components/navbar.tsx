@@ -6,12 +6,10 @@ import ShoppingIcon from "./shoppingIcon";
 import ThemeButton from "./theme-button";
 
 const Navbar = async () => {
-
-  
   const data = await getCategories();
 
   return (
-    <div className="navbar bg-green-100 border-b-gray-500 border h-16">
+    <div className="navbar bg-green-300 border-b-gray-500 border h-16">
       <div className="navbar-start">
         <div className="dropdown ">
           <label tabIndex={0} className="btn text-accent btn-ghost lg:hidden">
@@ -40,7 +38,10 @@ const Navbar = async () => {
             />
           </ul>
         </div>
-        <Link href="/" className="font-black ml-2 text-2xl  flex items-center h-16 overflow-hidden">
+        <Link
+          href="/"
+          className="font-black ml-2 text-2xl  flex items-center h-16 overflow-hidden"
+        >
           TinkerLab🧪
           {/* <span className=" text-sm text-green-500 flex items-center ml-2">
             <span className="text-sm">by</span>
@@ -60,7 +61,7 @@ const Navbar = async () => {
       </div>
 
       <div className="navbar-end mr-1 lg:mr-5 md:mr-3 gap-x-2 flex items-center  h-16">
-        <ThemeButton/>
+        <ThemeButton />
         <ShoppingIcon />
       </div>
     </div>
